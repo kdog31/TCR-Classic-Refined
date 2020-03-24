@@ -12,6 +12,7 @@ RUN unzip /tmp/TCR.zip -d /minecraft/
 
 #ADD ./launch.sh /minecraft/launch.sh
 RUN chmod +x /minecraft/launch.sh
+RUN chmod 777 /minecraft/tcr_classic_refined_server.jar
 
 VOLUME /minecraft
 EXPOSE 25565
